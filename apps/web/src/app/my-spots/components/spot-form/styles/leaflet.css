@@ -1,0 +1,78 @@
+.search-input-create-spot {
+  width: 100%;
+  padding: 0.9375rem 20px 0.9375rem 2.8rem;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 14px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 0.75rem;
+  color: #eaecf3;
+  padding-right: 3rem;
+  text-overflow: ellipsis;
+  background: #3d4143;
+}
+
+.search-input-create-spot:focus {
+  outline: #3182ce 2px solid;
+  box-shadow: 0 0 0 1px #3182ce;
+}
+
+.search-input-create-spot::placeholder {
+  color: #bcbcbc;
+}
+
+.search-container-create-spot {
+  width: 100%;
+  padding: 22px 36px 0 16px;
+}
+
+.search-container-create-spot:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 2rem;
+  top: 2.25rem;
+  width: 1.25rem;
+  height: 1.125rem;
+  background: url('https://res.cloudinary.com/dxm7clrdp/image/upload/v1685354068/Frame_2_yh3bm4.png')
+    no-repeat;
+  background-size: cover;
+  filter: opacity(0.6) drop-shadow(0 0 0 #a0aaae);
+}
+
+.geosearch.search-container-create-spot.leaflet-control {
+  margin-left: 0.75rem;
+}
+
+.reset-create-spot {
+  position: absolute;
+  right: 36px;
+  top: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  color: #b0eb5f;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.search-result-list-create-spot {
+  display: none;
+}
+
+.search-result-list-create-spot.active {
+  display: block;
+  margin-top: -0.5rem;
+  padding: 16px;
+  padding-top: 20px;
+  background: #212121;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-result-list-create-spot.active > div {
+  margin-bottom: 0.5rem;
+  color: #eaecf3;
+  font-family: 'Poppins', 'sans-serif';
+  text-decoration: underline;
+}

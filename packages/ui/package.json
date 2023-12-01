@@ -1,0 +1,35 @@
+{
+  "name": "@sportspot/ui",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "devDependencies": {
+    "@sportspot/eslint-config": "workspace:*",
+    "@sportspot/tokens": "workspace:*",
+    "@sportspot/ts-config": "workspace:*",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "eslint": "^7.32.0",
+    "react": "^18.2.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@chakra-ui/anatomy": "2.1.1",
+    "@chakra-ui/next-js": "2.1.2",
+    "@chakra-ui/react": "2.5.5",
+    "@chakra-ui/styled-system": "2.8.0",
+    "@chakra-ui/theme-tools": "2.0.16",
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "framer-motion": "^10.10.0",
+    "lucide-react": "0.172.0",
+    "react-iconly": "^2.2.10"
+  }
+}

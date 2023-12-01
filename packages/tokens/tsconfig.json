@@ -1,0 +1,4 @@
+{
+  "extends": "@sportspot/ts-config/base.json",
+  "include": ["src"]
+}
